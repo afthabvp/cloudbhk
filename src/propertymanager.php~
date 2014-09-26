@@ -1,0 +1,7 @@
+<?php
+echo '<a href="/propertyform.php">add property</a>';
+	echo "<br>";
+	echo '<a href="/propertylist.php">view property</a>';
+echo "click here to logout";
+		echo '<a href="/logout.php">click</a>';
+?>

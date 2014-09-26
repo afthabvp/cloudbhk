@@ -1,0 +1,28 @@
+<html>
+<body>
+<?php
+
+ session_start();
+$id=$_SESSION['USER_ID'];
+if (isset($_SESSION['MSG'])) {
+	$msg=$_SESSION['MSG'];
+	unset($_SESSION['MSG']);
+	echo $msg;
+	
+}
+
+echo '<form action="new.php" method="post">
+enter the property details<br>
+Property name    : <input type="text" name="name"><br>
+Property type    :<input type="text" name="type"placeholder="PG or HOUSE or APARTMENT or FLAT"><br>
+Number of floors :<input type="text" name="max_floor"><br>
+address          :<input type="text" name="address"><br>
+city             :<input type="text" name="city"><br>
+state            :<input type="text" name="state"><br>
+pincode          :<input type="text" name="pincode"><br>
+Terms&conditions :<input type="text" name="conditions" placeholder="if any specific"><br>
+<input type="submit" value="submit">
+</form>';
+?>
+</body>
+</html>
